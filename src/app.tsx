@@ -1,7 +1,7 @@
 import { VoidFunctionComponent } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Navbar, Home } from './components';
+import { Navbar, Home, Portfolio } from './components';
 
 // eslint-disable-next-line max-lines-per-function
 const App: VoidFunctionComponent = () => (
@@ -9,6 +9,10 @@ const App: VoidFunctionComponent = () => (
     <Navbar />
 
     <Switch>
+      <Route path="/portfolio">
+        <Portfolio />
+      </Route>
+
       <Route path="/">
         <Home />
       </Route>
