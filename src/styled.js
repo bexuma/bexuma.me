@@ -5,20 +5,6 @@ const AppContainer = styled.div`
   flex-direction: row;
 `;
 
-const Nav = styled.nav`
-  width: 300px;
-  height: calc(100vh - 20px);
-  background-color: #f9f9f9;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`;
-
-const Copyright = styled.span`
-  text-align: center;
-`;
-
 const Container = styled.main`
   flex: 1;
   padding: 20px;
@@ -32,4 +18,4 @@ const Tag = styled.div`
   margin-left: 6px;
 `;
 
-export { AppContainer, Nav, Copyright, Container, Tag };
+export { AppContainer, Container, Tag };

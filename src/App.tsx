@@ -1,5 +1,7 @@
-import { FunctionComponent } from 'react';
-import { AppContainer, Nav, Container, Copyright, Tag } from './styled';
+import { VoidFunctionComponent } from 'react';
+
+import { AppContainer, Container, Tag } from './styled';
+import { Navbar } from './components';
 
 const tags: Array<string> = [
   'JavaScript',
@@ -13,18 +15,9 @@ const tags: Array<string> = [
   'Remote',
 ];
 
-// eslint-disable-next-line max-lines-per-function
-const App: FunctionComponent<unknown> = () => (
+const App: VoidFunctionComponent = () => (
   <AppContainer>
-    <Nav>
-      <ul>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-      </ul>
-
-      <Copyright>Designed and build by myself</Copyright>
-    </Nav>
+    <Navbar />
     <Container>
       <section>
         <h1>My name is Bexultan Myrzatayev</h1>
