@@ -1,26 +1,39 @@
-import { VoidFunctionComponent } from 'react';
+import { useState, VoidFunctionComponent } from 'react';
 
-import { Nav, Top, LanguageContainer, Language, Copyright } from './styled';
+import {
+  Container,
+  ModeContainer,
+  ModeLabel,
+  NavContainer,
+  Nav,
+} from './styled';
 
-const Navbar: VoidFunctionComponent = () => (
-  <Nav>
-    <Top>
-      <LanguageContainer>
-        <Language isBold={false}>KK</Language>
-        <Language isBold>EN</Language>
-        <Language isBold={false}>RU</Language>
-      </LanguageContainer>
-      <div>Mode toggle</div>
-    </Top>
+const Navbar: VoidFunctionComponent = () => {
+  const [isDark, setIsDark] = useState(false);
 
-    <ul>
-      <li>About</li>
-      <li>Portfolio</li>
-      <li>Contact</li>
-    </ul>
+  const handleModeChange = () => {
+    setIsDark(!isDark);
+  };
 
-    <Copyright>Designed and build by myself</Copyright>
-  </Nav>
-);
+  return (
+    <Container>
+      <NavContainer>
+        <Nav>Portfolio</Nav>
+        <Nav>Home</Nav>
+        <Nav>Resume</Nav>
+      </NavContainer>
 
+      <ModeContainer>
+        <ModeLabel htmlFor="darkMode">Toggle Mode</ModeLabel>
+
+        <input
+          type="checkbox"
+          checked={isDark}
+          onChange={handleModeChange}
+          id="darkMode"
+        />
+      </ModeContainer>
+    </Container>
+  );
+};
 export default Navbar;
