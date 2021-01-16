@@ -1,5 +1,4 @@
 import { useState, VoidFunctionComponent } from 'react';
-import { Link } from 'react-router-dom';
 
 import {
   Container,
@@ -7,6 +6,7 @@ import {
   ModeLabel,
   NavContainer,
   Nav,
+  StyledLink,
 } from './styled';
 
 const Navbar: VoidFunctionComponent = () => {
@@ -20,14 +20,14 @@ const Navbar: VoidFunctionComponent = () => {
     <Container>
       <NavContainer>
         <Nav>
-          <Link to="/portfolio">Portfolio</Link>
+          <StyledLink to="/portfolio">Portfolio</StyledLink>
         </Nav>
 
         <Nav>
-          <Link to="/">Home</Link>
+          <StyledLink to="/">Home</StyledLink>
         </Nav>
         <Nav>
-          <Link to="/resume">Resume</Link>
+          <StyledLink to="/resume">Resume</StyledLink>
         </Nav>
       </NavContainer>
 

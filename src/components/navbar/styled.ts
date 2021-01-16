@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Container = styled.nav`
   width: 100%;
   height: 64px;
-  background-color: #79e2f2;
+  background-color: #00c7e6;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -41,7 +42,13 @@ const ModeLabel = styled.label`
   font-size: 12px;
 `;
 
-export { Container, ModeContainer, ModeLabel, NavContainer, Nav };
+const StyledLink = styled(Link)`
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+`;
+
+export { Container, ModeContainer, ModeLabel, NavContainer, Nav, StyledLink };
 
 // interface LanguageProps {
 //   isBold: boolean;
