@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import { createGlobalStyle } from 'styled-components';
 
-import App from './appfoo';
+import App from './app';
 
 const GlobalStyle = createGlobalStyle`
   body {
