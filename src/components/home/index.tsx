@@ -1,6 +1,6 @@
 import { VoidFunctionComponent } from 'react';
 
-import { Bio, Portrait, Tag, Underline } from './styled';
+import { Container, Bio, Portrait, Tag, Underline } from './styled';
 import portrait from './portrait.jpg';
 
 const tags: Array<string> = [
@@ -18,7 +18,7 @@ const tags: Array<string> = [
 
 // eslint-disable-next-line max-lines-per-function
 const Home: VoidFunctionComponent = () => (
-  <div>
+  <Container>
     <h1 style={{ textAlign: 'center' }}>Sàlem</h1>
 
     <Bio>
@@ -59,7 +59,7 @@ const Home: VoidFunctionComponent = () => (
 
       <Portrait src={portrait} alt="Portait" />
     </Bio>
-  </div>
+  </Container>
 );
 
 export default Home;

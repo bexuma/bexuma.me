@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
+const Container = styled.main`
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 40px;
+`;
+
 const Bio = styled.div`
-  padding-top: 8px;
+  padding-top: 24px;
   display: inline-flex;
   font-size: 16px;
 `;
@@ -27,4 +33,4 @@ const Underline = styled.u`
   text-decoration-thickness: 2px;
 `;
 
-export { Bio, Portrait, Tag, Underline };
+export { Container, Bio, Portrait, Tag, Underline };
