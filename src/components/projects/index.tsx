@@ -1,7 +1,7 @@
 import { VoidFunctionComponent } from 'react';
 
 import { PROJECT_LIST } from './constants';
-import { Project, TagContainer, Tag } from './styled';
+import { Project, TagContainer, Tag, LinkContainer } from './styled';
 import { Wrapper, Header } from '../../styled';
 
 const Portfolio: VoidFunctionComponent = () => (
@@ -18,9 +18,19 @@ const Portfolio: VoidFunctionComponent = () => (
           ))}
         </TagContainer>
 
-        {project.githubLink && <a href={project.githubLink}>Github</a>}
+        <LinkContainer>
+          {project.projectLink && (
+            <a href={project.projectLink} target="_blank" rel="noreferrer">
+              Project
+            </a>
+          )}
 
-        {project.projectLink && <a href={project.projectLink}>Project</a>}
+          {project.githubLink && (
+            <a href={project.githubLink} target="_blank" rel="noreferrer">
+              Github
+            </a>
+          )}
+        </LinkContainer>
       </Project>
     ))}
   </Wrapper>

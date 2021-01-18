@@ -19,15 +19,18 @@ const BioContainer = styled.div`
 `;
 
 const Bio = styled.div`
+  padding-bottom: 24px;
+
   @media ${screen.laptop} {
-    padding-right: 20px;
+    padding-right: 24px;
+    padding-bottom: 0;
   }
 `;
 
 const PortraitContainer = styled.div`
   width: 100%;
   min-width: 300px;
-  padding-top: 16px;
+  padding-top: 6px;
 
   @media ${screen.laptop} {
     display: block;
@@ -40,7 +43,7 @@ const Portrait = styled.img`
   height: auto;
 `;
 
-const Alt = styled.span`
+const Alt = styled.figcaption`
   margin-top: 8px;
   font-size: 12px;
   text-align: center;
@@ -54,11 +57,11 @@ const TagContainer = styled.div`
 
 const Tag = styled.div`
   display: inline-block;
-  padding: 2px 8px;
-  border-radius: 12px;
-  border: 1px solid black;
-  margin-right: 6px;
-  margin-bottom: 5px;
+  padding: 2px 10px;
+  border-radius: 16px;
+  border: 1px solid #100f10;
+  margin-right: 8px;
+  margin-bottom: 6px;
   font-size: 14px;
 
   @media ${screen.laptop} {
@@ -88,30 +91,30 @@ const Superscript = styled.sup`
 const TooltipText = styled.span`
   visibility: hidden;
   width: 320px;
-  background-color: black;
-  color: #fff;
+  background-color: #100f10;
+  color: #f7f7fe;
   text-align: center;
   border-radius: 6px;
   padding: 6px 12px;
   position: absolute;
   font-size: 12px;
 
-  top: 16px;
+  top: -12px;
   left: 110%;
-  margin-left: 4px;
-  margin-top: -24px;
+  margin-left: 5px;
   opacity: 0;
   transition: opacity 0.3s;
+  background-color: #100f10;
 
   ::after {
     content: '';
     position: absolute;
-    top: 40%;
+    top: calc(50% - 6px);
     right: 100%; /* To the left of the tooltip */
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent black transparent transparent;
+    border-color: transparent #100f10 transparent transparent;
   }
 `;
 
@@ -132,6 +135,23 @@ const Tooltip = styled.div`
   }
 `;
 
+const ContactContainer = styled.section`
+  a {
+    color: #00a3bf;
+    font-weight: 500;
+    margin-right: 16px;
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
+  a[target='_blank']::after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    margin: 0 2px 0 4px;
+  }
+`;
+
 export {
   BioContainer,
   Bio,
@@ -145,4 +165,5 @@ export {
   Superscript,
   Tooltip,
   TooltipText,
+  ContactContainer,
 };

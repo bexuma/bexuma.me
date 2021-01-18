@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+
 import { screen } from '../../theme';
 
 const Container = styled.nav`
@@ -9,6 +9,12 @@ const Container = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  a {
+    color: #f7f7fe;
+    text-decoration: none;
+    font-weight: bold;
+  }
 `;
 
 const NavContainer = styled.ul`
@@ -31,6 +37,12 @@ const Nav = styled.li`
   flex: 1;
   text-align: center;
   font-weight: 500;
+
+  a[target='_blank']::after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    margin: 0 3px 0 6px;
+    filter: brightness(0) invert(1);
+  }
 `;
 
 const ModeContainer = styled.div`
@@ -46,34 +58,4 @@ const ModeLabel = styled.label`
   font-size: 12px;
 `;
 
-const StyledLink = styled(Link)`
-  color: #f7f7fe;
-  text-decoration: none;
-  font-weight: bold;
-`;
-
-export { Container, ModeContainer, ModeLabel, NavContainer, Nav, StyledLink };
-
-// interface LanguageProps {
-//   isBold: boolean;
-// }
-
-// const LanguageContainer = styled.ul`
-//   padding: 0;
-//   margin: 0;
-// `;
-
-// const Language = styled.li<LanguageProps>`
-//   font-weight: ${({ isBold }) => (isBold ? '700' : '400')};
-//   display: inline-block;
-//   list-style: none;
-//   padding: 4px;
-//   font-size: 12px;
-// `;
-
-// const Copyright = styled.span`
-//   width: 300px;
-//   position: absolute;
-//   bottom: 20px;
-//   text-align: center;
-// `;
+export { Container, ModeContainer, ModeLabel, NavContainer, Nav };
