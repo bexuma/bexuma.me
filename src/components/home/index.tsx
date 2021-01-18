@@ -23,7 +23,7 @@ const AboutMe: VoidFunctionComponent = () => (
     <h2>About me</h2>
     <p>
       I am a software engineer building up <Bold>servers</Bold>,{' '}
-      <Bold>web</Bold> and <Bold>mobile</Bold> applications from scratch. I have
+      <Bold>web</Bold> and <Bold>mobile applications</Bold> from scratch. I have
       also turned my side project to a profitatble SaaS company.
     </p>
     <p>
@@ -77,7 +77,7 @@ const Home: VoidFunctionComponent = () => (
         <TooltipText>
           Sálem means &#39;Hi&#39; in Kazakh language.
           <br />
-          Beware, it is an informal greeting – do not say it to someone&#39;s
+          Beware, it is an informal greeting – do not throw it to someone&#39;s
           granny!
         </TooltipText>
       </Tooltip>
