@@ -21,6 +21,16 @@ const BioContainer = styled.div`
 const Bio = styled.div`
   padding-bottom: 24px;
 
+  a {
+    color: #00a3bf;
+    font-weight: 500;
+    margin-right: 16px;
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
   @media ${screen.laptop} {
     padding-right: 24px;
     padding-bottom: 0;

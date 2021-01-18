@@ -12,7 +12,7 @@ const PROJECT_LIST: Array<Project> = [
   {
     title: 'YS Service Center',
     description:
-      'My hobby project – an electronic document management system (EDMS) for university student service centers, which has eventually turned into a profitable SaaS company 💰',
+      'My hobby project – an electronic document management system (EDMS) for university student service centers, which has eventually turned into a profitable SaaS company.',
     imageUrl: '',
     tags: ['React', 'Ruby', 'GraphQL', 'AWS', 'Digital Signature', 'Kendo'],
     year: 2019,
@@ -22,7 +22,7 @@ const PROJECT_LIST: Array<Project> = [
   {
     title: 'Eurasian Tech Shop',
     description:
-      'An intrapreneurial initiative of the former Kazakhmys Corporation employee to create a prototype for the spare parts wholesale B2B online store 🚀',
+      'An intrapreneurial initiative of the former Kazakhmys Corporation employee to create a prototype for the spare parts wholesale B2B online store.',
     imageUrl: '',
     tags: ['React', 'React Native', 'GraphQL'],
     year: 2020,
@@ -30,7 +30,7 @@ const PROJECT_LIST: Array<Project> = [
   {
     title: 'Listen Instead',
     description:
-      'Open your ears, and listen to your favourite articles in a human voice. Tune into recent content from your favourite sources through the built-in player with speed & sound control 🎧',
+      'Open your ears, and listen to your favourite articles in a human voice. Tune into recent content from your favourite sources through the built-in player with speed & sound control.',
     imageUrl: '',
     tags: ['JavaScript', 'React Native', 'Expo', 'Redux', 'Firebase'],
     year: 2019,
@@ -38,7 +38,7 @@ const PROJECT_LIST: Array<Project> = [
   {
     title: 'One Page Resume',
     description:
-      'My first ever deployed web page which had landed me an interview and a job offer. I had built it under 5 hours by following the Cupcakes tutorial on Udemy 📚',
+      'My first ever deployed web page which had landed me an interview and a job offer. I had built it under 5 hours by following the Cupcakes tutorial on Udemy.',
     imageUrl: '',
     tags: ['HTML5', 'CSS3', 'jQuery'],
     year: 2016,
@@ -48,7 +48,7 @@ const PROJECT_LIST: Array<Project> = [
   {
     title: 'Sliding Puzzle',
     description:
-      'A nostalgy project from the 1st year of NYU CS course, which I built while battling the coronavirus 🦠',
+      'A nostalgy project from the 1st year of NYU CS course, which I built while battling the coronavirus.',
     imageUrl: '',
     tags: ['React', 'Styled Components'],
     year: 2020,

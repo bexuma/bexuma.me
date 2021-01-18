@@ -22,9 +22,9 @@ const AboutMe: VoidFunctionComponent = () => (
   <section>
     <h2>About me</h2>
     <p>
-      I am a software engineer building up <Bold>servers</Bold>,{' '}
-      <Bold>web</Bold> and <Bold>mobile applications</Bold> from scratch. I have
-      also turned my side project to a profitatble SaaS company.
+      I am a software engineer who builds <Bold>servers</Bold>, <Bold>web</Bold>{' '}
+      and <Bold>mobile apps</Bold> from scratch. I have also turned my side
+      project to a profitatble SaaS company.
     </p>
     <p>
       I am currently in a <Bold>job search</Bold>. I am a resident of Kazakhstan
