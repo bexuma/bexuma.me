@@ -1,7 +1,6 @@
 import { VoidFunctionComponent } from 'react';
 
 import {
-  Container,
   BioContainer,
   Bio,
   PortraitContainer,
@@ -10,26 +9,27 @@ import {
   TagContainer,
   Tag,
   Bold,
+  Superscript,
+  Tooltip,
+  TooltipText,
 } from './styled';
 import portrait from './portrait.jpg';
-
-const tags: Array<string> = [
-  'TypeScript',
-  'JavaScript',
-  'React',
-  'React Native',
-  'GraphQL',
-  'Apollo',
-  'Ruby',
-  'SQL',
-  'Scrum',
-  'Remote',
-];
+import { TAGS } from './constants';
+import { Wrapper, Header } from '../../styled';
 
 // eslint-disable-next-line max-lines-per-function
 const Home: VoidFunctionComponent = () => (
-  <Container>
-    <h1 style={{ textAlign: 'center' }}>Sálem</h1>
+  <Wrapper>
+    <Header>
+      Sálem
+      <Tooltip>
+        <Superscript>[?]</Superscript>
+        <TooltipText>
+          Sálem means &#39;Hi&#39; in Kazakh. Beware, it is an informal
+          greeting, do not say it to someone&#39;s granny! 😉
+        </TooltipText>
+      </Tooltip>
+    </Header>
 
     <BioContainer>
       <Bio>
@@ -40,7 +40,7 @@ const Home: VoidFunctionComponent = () => (
         <h2>About me</h2>
         <p>
           I am a software engineer building up <Bold>servers</Bold>,{' '}
-          <Bold>web</Bold> and <Bold>mobile</Bold> applications from scratch . I
+          <Bold>web</Bold> and <Bold>mobile</Bold> applications from scratch. I
           have also turned my side project to a profitatble SaaS company.
         </p>
         <p>
@@ -49,7 +49,7 @@ const Home: VoidFunctionComponent = () => (
           my <a href="https://bexuma.me/resume">resume</a>!
         </p>
         <TagContainer>
-          {tags.map((tag: string) => (
+          {TAGS.map((tag: string) => (
             <Tag>{tag}</Tag>
           ))}
         </TagContainer>
@@ -65,12 +65,11 @@ const Home: VoidFunctionComponent = () => (
         <Alt>
           A casual selfie made during my sophomore year.
           <br />
-          Had been extremely busy configuring APIs, had not gotten time to cut
-          my hair
+          Had been extremely busy configuring APIs, had no time for a
+          hairdresser
         </Alt>
       </PortraitContainer>
     </BioContainer>
-  </Container>
+  </Wrapper>
 );
-
 export default Home;

@@ -1,47 +1,18 @@
-import { useState, VoidFunctionComponent } from 'react';
+import { VoidFunctionComponent } from 'react';
 
-import {
-  Container,
-  ModeContainer,
-  ModeLabel,
-  NavContainer,
-  Nav,
-  StyledLink,
-} from './styled';
+import { NAV_LINKS } from './constants';
 
-const Navbar: VoidFunctionComponent = () => {
-  const [isDark, setIsDark] = useState(false);
+import { Container, NavContainer, Nav, StyledLink } from './styled';
 
-  const handleModeChange = () => {
-    setIsDark(!isDark);
-  };
-
-  return (
-    <Container>
-      <NavContainer>
+const Navbar: VoidFunctionComponent = () => (
+  <Container>
+    <NavContainer>
+      {NAV_LINKS.map((nav) => (
         <Nav>
-          <StyledLink to="/portfolio">Portfolio</StyledLink>
+          <StyledLink to={nav.path}>{nav.name}</StyledLink>
         </Nav>
-
-        <Nav>
-          <StyledLink to="/">Home</StyledLink>
-        </Nav>
-        <Nav>
-          <StyledLink to="/resume">Resume</StyledLink>
-        </Nav>
-      </NavContainer>
-
-      <ModeContainer>
-        <ModeLabel htmlFor="darkMode">Toggle Mode</ModeLabel>
-
-        <input
-          type="checkbox"
-          checked={isDark}
-          onChange={handleModeChange}
-          id="darkMode"
-        />
-      </ModeContainer>
-    </Container>
-  );
-};
+      ))}
+    </NavContainer>
+  </Container>
+);
 export default Navbar;
