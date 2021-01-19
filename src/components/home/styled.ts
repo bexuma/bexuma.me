@@ -100,12 +100,12 @@ const Superscript = styled.sup`
 
 const TooltipText = styled.span`
   visibility: hidden;
-  width: 320px;
+  width: 248px;
   background-color: #100f10;
   color: #f7f7fe;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
-  padding: 6px 12px;
+  padding: 6px 16px;
   position: absolute;
   font-size: 12px;
 
@@ -162,6 +162,10 @@ const ContactContainer = styled.section`
   }
 `;
 
+const Line = styled.span`
+  display: block;
+`;
+
 export {
   BioContainer,
   Bio,
@@ -176,4 +180,5 @@ export {
   Tooltip,
   TooltipText,
   ContactContainer,
+  Line,
 };
