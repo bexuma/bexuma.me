@@ -41,7 +41,7 @@ const AboutMe: VoidFunctionComponent = () => (
     </p>
     <TagContainer>
       {TAGS.map((tag: string) => (
-        <Tag>{tag}</Tag>
+        <Tag key={tag}>{tag}</Tag>
       ))}
     </TagContainer>
   </section>
@@ -51,7 +51,7 @@ const Contacts: VoidFunctionComponent = () => (
   <ContactContainer>
     <h2>Contacts</h2>
     {CONTACT_LIST.map((contact) => (
-      <a href={contact.url} target="_blank" rel="noreferrer">
+      <a key={contact.name} href={contact.url} target="_blank" rel="noreferrer">
         {contact.name}
       </a>
     ))}
@@ -84,10 +84,7 @@ const Home: VoidFunctionComponent = () => (
 
     <BioContainer>
       <Bio>
-        <p>
-          My name is Bexultan Myrzatayev. Welcome to my personal website!{' '}
-          <Bold>#WIP</Bold>
-        </p>
+        <p>My name is Bexultan Myrzatayev. Welcome to my website!</p>
         <AboutMe />
         <Contacts />
       </Bio>

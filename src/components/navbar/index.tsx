@@ -11,14 +11,14 @@ const Navbar: VoidFunctionComponent = () => (
       {NAV_LINKS.map((nav) => {
         if (nav.tag === 'link') {
           return (
-            <Nav>
+            <Nav key={nav.path}>
               <Link to={nav.path}>{nav.name}</Link>
             </Nav>
           );
         }
 
         return (
-          <Nav>
+          <Nav key={nav.path}>
             <a
               href={`${process.env.PUBLIC_URL}/resume.pdf`}
               target="_blank"
