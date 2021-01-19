@@ -5,13 +5,13 @@ import { screen } from '../../theme';
 const Container = styled.nav`
   width: 100%;
   height: 64px;
-  background-color: #37b9f1;
+  background-color: ${({ theme }) => theme.colors.navigation};
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   a {
-    color: #f7f7fe;
+    color: ${({ theme }) => theme.colors.background};
     text-decoration: none;
     font-weight: bold;
   }

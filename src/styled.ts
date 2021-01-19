@@ -1,6 +1,21 @@
-import styled, { createGlobalStyle } from 'styled-components';
+/* eslint-disable no-shadow */
+import styled, { createGlobalStyle, DefaultTheme } from 'styled-components';
 
 import { screen } from './theme';
+
+const mardiGras = '#100f10';
+const ghostWhite = '#f7f7fe';
+const summerSky = '#37b9f1';
+const pacificBlue = '#00A3BF';
+
+const theme: DefaultTheme = {
+  colors: {
+    navigation: summerSky,
+    font: mardiGras,
+    primary: pacificBlue,
+    background: ghostWhite,
+  },
+};
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -10,8 +25,8 @@ const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #f7f7fe;
-    color: #100f10;
+    background-color: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.font};
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -59,4 +74,4 @@ const Header = styled.h1`
   text-align: center;
 `;
 
-export { GlobalStyle, Wrapper, Header };
+export { GlobalStyle, Wrapper, Header, theme };

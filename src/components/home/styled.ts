@@ -22,7 +22,7 @@ const Bio = styled.div`
   padding-bottom: 24px;
 
   a {
-    color: #00a3bf;
+    color: ${({ theme }) => theme.colors.font};
     font-weight: 500;
     margin-right: 16px;
 
@@ -69,7 +69,7 @@ const Tag = styled.div`
   display: inline-block;
   padding: 2px 10px;
   border-radius: 16px;
-  border: 1px solid #100f10;
+  border: 1px solid ${({ theme }) => theme.colors.font};
   margin-right: 8px;
   margin-bottom: 6px;
   font-size: 14px;
@@ -81,27 +81,27 @@ const Tag = styled.div`
 
 const Underline = styled.u`
   /* text-decoration: none;
-  border-bottom: 2px solid #00a3bf; */
+  border-bottom: 2px solid #${({ theme }) => theme.colors.primary}; */
 
   text-decoration: underline;
-  text-decoration-color: #00a3bf;
+  text-decoration-color: ${({ theme }) => theme.colors.primary};
   text-decoration-thickness: 2px;
 `;
 
 const Bold = styled.b`
-  color: #00a3bf;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 const Superscript = styled.sup`
   font-size: 14px;
-  color: #00a3bf;
+  color: ${({ theme }) => theme.colors.primary};
   margin-left: 4px;
 `;
 
 const TooltipText = styled.span`
   visibility: hidden;
   width: 248px;
-  background-color: #100f10;
+  background-color: ${({ theme }) => theme.colors.font};
   color: #f7f7fe;
   text-align: left;
   border-radius: 6px;
@@ -114,7 +114,7 @@ const TooltipText = styled.span`
   margin-left: 5px;
   opacity: 0;
   transition: opacity 0.3s;
-  background-color: #100f10;
+  background-color: ${({ theme }) => theme.colors.font};
 
   ::after {
     content: '';
@@ -124,7 +124,8 @@ const TooltipText = styled.span`
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent #100f10 transparent transparent;
+    border-color: transparent ${({ theme }) => theme.colors.font} transparent
+      transparent;
   }
 `;
 
@@ -147,7 +148,7 @@ const Tooltip = styled.div`
 
 const ContactContainer = styled.section`
   a {
-    color: #00a3bf;
+    color: ${({ theme }) => theme.colors.primary};
     font-weight: 500;
     margin-right: 16px;
 

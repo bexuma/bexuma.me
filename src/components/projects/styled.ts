@@ -12,7 +12,7 @@ const Project = styled.div`
   }
 
   a {
-    color: #00a3bf;
+    color: ${({ theme }) => theme.colors.primary};
     font-weight: 500;
     margin-right: 8px;
   }
@@ -39,7 +39,7 @@ const Tag = styled.div`
   display: inline-block;
   padding: 0px 9px 1px 9px;
   border-radius: 16px;
-  border: 1px solid #100f10;
+  border: 1px solid ${({ theme }) => theme.colors.font};
   margin-right: 6px;
   margin-bottom: 5px;
   font-size: 12px;
