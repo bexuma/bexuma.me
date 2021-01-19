@@ -22,7 +22,7 @@ const Bio = styled.div`
   padding-bottom: 24px;
 
   a {
-    color: ${({ theme }) => theme.colors.font};
+    color: ${({ theme }) => theme.colors.primary};
     font-weight: 500;
     margin-right: 16px;
 
@@ -102,7 +102,7 @@ const TooltipText = styled.span`
   visibility: hidden;
   width: 248px;
   background-color: ${({ theme }) => theme.colors.font};
-  color: #f7f7fe;
+  color: ${({ theme }) => theme.colors.background};
   text-align: left;
   border-radius: 6px;
   padding: 6px 16px;
