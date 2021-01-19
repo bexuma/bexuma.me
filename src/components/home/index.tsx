@@ -24,11 +24,12 @@ const AboutMe: VoidFunctionComponent = () => (
     <p>
       I am a software engineer who builds <Bold>servers</Bold>, <Bold>web</Bold>{' '}
       and <Bold>mobile apps</Bold> from scratch. I have also turned my side
-      project to a profitatble SaaS company.
+      project into a profitable SaaS company.
     </p>
     <p>
       I am currently in a <Bold>job search</Bold>. I am a resident of Kazakhstan
-      open for both remote work (GMT+6) and relocation. Here is my{' '}
+      looking for <Bold>front-end</Bold> and <Bold>full-stack</Bold> remote
+      positions in a product company. Here is my{' '}
       <a
         href={`${process.env.PUBLIC_URL}/resume.pdf`}
         target="_blank"
