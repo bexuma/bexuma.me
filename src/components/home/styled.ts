@@ -31,6 +31,10 @@ const Bio = styled.div`
     }
   }
 
+  @media ${screen.tablet} {
+    padding-right: 12px;
+  }
+
   @media ${screen.laptop} {
     padding-right: 24px;
     padding-bottom: 0;

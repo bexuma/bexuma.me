@@ -64,7 +64,7 @@ const Selfie: VoidFunctionComponent = () => (
     <Alt>
       A casual selfie made during my sophomore year.
       <br />
-      Had been extremely busy configuring APIs, had no time for a hairdresser
+      Had been extremely busy configuring APIs, had no time to get my hair cut
     </Alt>
   </PortraitContainer>
 );
