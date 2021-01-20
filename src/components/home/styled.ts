@@ -43,11 +43,11 @@ const Bio = styled.div`
 
 const PortraitContainer = styled.div`
   width: 100%;
-  min-width: 300px;
   padding-top: 6px;
 
   @media ${screen.laptop} {
     display: block;
+    min-width: 300px;
     width: 300px;
   }
 `;
