@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { screen } from '../../theme';
+import { images } from '../../assets';
 
 const BioContainer = styled.div`
   display: flex;
@@ -52,9 +53,14 @@ const PortraitContainer = styled.div`
   }
 `;
 
-const Portrait = styled.img`
+const Portrait = styled.div`
+  position: relative;
   width: 100%;
-  height: auto;
+  padding-top: 125%;
+  background-image: url(${images.portrait});
+  background-color: ${({ theme }) => theme.colors.background};
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 const Alt = styled.figcaption`

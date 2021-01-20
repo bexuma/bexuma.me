@@ -16,7 +16,6 @@ import {
 } from './styled';
 import { CONTACT_LIST, TAGS } from './constants';
 import { Wrapper, Header } from '../../styled';
-import { images } from '../../assets';
 
 const AboutMe: VoidFunctionComponent = () => (
   <section>
@@ -60,7 +59,7 @@ const Contacts: VoidFunctionComponent = () => (
 
 const Selfie: VoidFunctionComponent = () => (
   <PortraitContainer>
-    <Portrait src={images.portrait} alt="Portait" />
+    <Portrait />
     <Alt>
       A casual selfie made during my sophomore year.
       <br />
