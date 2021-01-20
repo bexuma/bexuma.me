@@ -72,6 +72,19 @@ const Wrapper = styled.div`
 
 const Header = styled.h1`
   text-align: center;
+  font-size: 1.65em;
+
+  @media ${screen.tablet} {
+    font-size: 1.7em;
+  }
+
+  @media ${screen.laptop} {
+    font-size: 1.8em;
+  }
+
+  @media ${screen.desktop} {
+    font-size: 2em;
+  }
 `;
 
 export { GlobalStyle, Wrapper, Header, theme };
