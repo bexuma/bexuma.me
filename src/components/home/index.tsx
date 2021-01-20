@@ -77,7 +77,7 @@ const Home: VoidFunctionComponent = () => (
         <Superscript>[?]</Superscript>
         <TooltipText>
           Sálem stands for &#39;Hi&#39; in Kazakh language. Beware, it is an
-          informal greeting; do not accidentally say it to someone&#39;s granny!
+          informal greeting – do not throw it to someone&#39;s granny!
         </TooltipText>
       </Tooltip>
     </Header>

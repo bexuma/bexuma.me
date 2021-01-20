@@ -107,7 +107,7 @@ const TooltipText = styled.span`
   width: 248px;
   background-color: ${({ theme }) => theme.colors.font};
   color: ${({ theme }) => theme.colors.background};
-  text-align: left;
+  text-align: center;
   border-radius: 6px;
   padding: 6px 16px;
   position: absolute;
