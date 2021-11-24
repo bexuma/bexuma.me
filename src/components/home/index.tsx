@@ -21,7 +21,7 @@ const AboutMe: VoidFunctionComponent = () => (
   <section>
     <h2>About me</h2>
     <p>
-      I am a software engineer who builds <Bold>servers</Bold>, <Bold>web</Bold>{' '}
+      I am a software engineer building <Bold>servers</Bold>, <Bold>web</Bold>{' '}
       and <Bold>mobile apps</Bold> from scratch. I have also turned my side
       project into a profitable SaaS company.
     </p>
@@ -83,7 +83,7 @@ const Home: VoidFunctionComponent = () => (
 
     <BioContainer>
       <Bio>
-        <p>My name is Bexultan Myrzatayev. Welcome to my website!</p>
+        <p>My name is Bexultan Myrzatay. Welcome to my website!</p>
         <AboutMe />
         <Contacts />
       </Bio>
